@@ -1,7 +1,13 @@
-while True:
-    sifre = input("Şifreyi girin: ")
-    if sifre == "Taha":
-        print("Giriş başarılı")
-        break
-    else:
-        print("Tekrar deneyiniz")
+
+def sifre_dogrulama():
+    deneme_sayisi = 0
+    while True:
+        sifre = input("Şifreyi girin: ")
+        deneme_sayisi += 1
+        if sifre == "Taha":
+            print(f"Giriş başarılı. Şifreyi {deneme_sayisi} denemede girdiniz.")
+            break
+        else:
+            print("Tekrar deneyiniz")
+
+sifre_dogrulama()
